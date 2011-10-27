@@ -1,0 +1,468 @@
+/*CSS Document
+Theme Name: CraftedAndPressed v2
+Theme URI: http://www.craftedandpressed.com
+Description: A custom wordpress themekit designed for quick and easy wordpress theme design it is unconventional and does not use convential wordpress template includes, but degrades to wordpress standard when include files are found
+Version: 1.0
+Author: Shawn Sandy
+Author URI: http://www.shawnsandy.com
+
+STYLES*/
+.clear
+{
+	visibility: hidden;
+	display: none;
+}
+.dotted-border
+{
+	border-bottom: 1px dotted #C3C3C3;
+}
+.tiny, H3.tiny
+{
+	font-size: 1em;
+	font-style: italic;
+	color: #C3C3C3;
+}
+H3 SPAN.tiny
+{
+}
+/*BASE****************************************/
+BODY
+{
+	background-image: url(images/square_bg.png);
+	background-color: #080808;
+}
+H1, H2, H3, H4, H5
+{
+	font-weight: normal;
+	color: #A5A5A5;
+	font-family: BebasNeueRegular, Arial, "Myriad Web Pro", sans-serif;
+}
+A:link
+{
+	color: #A5A5A5;
+}
+A:visited
+{
+	color: #A5A5A5;
+}
+H3 A
+{
+	font-family: BebasNeueRegular, "Myriad Web Pro", Arial, "Myriad Web Pro", sans-serif;
+}
+H3 A:link, H3 A:visited, H3 A:hover, H3 A:active
+{
+	font-family: BebasNeueRegular, "Myriad Web Pro", Arial, "Myriad Web Pro", sans-serif;
+}
+H3 A:hover
+{
+	color: #111111;
+}
+P
+{
+	line-height: 1.6;
+}
+/*PAGE****************************************/
+#page
+{
+	background-image: url(images/crafted-pressed-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+/*NAV-TOP ************************************/
+NAV#top
+{
+	background-color: #111111;
+	/*[disabled]border-bottom:1px solid #FFFFFF;*/
+	padding: 0px;
+	margin: 0;
+	line-height: 16px;
+	overflow: hidden;
+}
+NAV#top LI
+{
+	line-height: 31px;
+	height: 20px;
+}
+NAV#top A:hover
+{
+	color: #FFFFFF;
+}
+/*HEADER***************************************/
+#header
+{
+	padding-top: 20px;
+	text-align: center;
+}
+#header #site-title
+{
+}
+#header .social
+{
+	text-align: right;
+	padding-top: 15px;
+}
+/*FEATURE*/
+#feature
+{
+	/*[disabled]background-color:#C3C3C3;*/
+	padding-top: 0;
+	padding-bottom: 20px;
+}
+#feature .row
+{
+	margin-bottom: 0;
+}
+#feature .feature-image
+{
+	text-align: center;
+	margin-bottom: 40px;
+	/*[disabled]background-color:#2F2F2F;*/
+}
+#feature-nav .columns
+{
+	text-align: center;
+}
+#feature-summary
+{
+	background-color: #205E8C;
+	/*[disabled]background-image:url(images/feature-info.png);*/
+	margin-bottom: 0;
+	color: #002B48;
+	padding-top: 20px;
+	padding-bottom: 0px;
+	background-image: url(images/square_bg.png);
+}
+#feature-summary H3
+{
+	font-size: 1.8em;
+	color: #FFFFFF;
+	font-family: BebasNeueRegular, "Myriad Web Pro", Arial, sans-serif;
+}
+#feature-summary H3 A:link, #feature-summary H3 A:visited
+{
+	color: #002B48;
+}
+#feature-summary H3 A:hover
+{
+	color: #E3E2E2;
+}
+#feature-summary LI IMG
+{
+	float: left;
+	margin-right: 5px;
+}
+#feature-list
+{
+}
+#feature-list UL
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 0;
+}
+/*CONTENT**************************************/
+#content
+{
+	padding-top: 60px;
+	background-image: url(images/square_bg.png);
+	background-color: #FFFFFF;
+	min-height: 600px;
+	padding-bottom: 20px;
+}
+#content #site-info
+{
+	margin-bottom: 40px;
+}
+.home #content
+{
+	min-height: 300px;
+}
+.home #content H3
+{
+	font-size: 3.2em;
+}
+.home #content H3 A:link
+{
+	color: #7A7A7A;
+}
+.home #content H3 A:hover
+{
+	color: #2F2F2F;
+}
+#site-info BUTTON.large
+{
+	background-color: #51A200;
+	border: 1px solid #DDEBF7;
+	color: #EDEDED;
+}
+#site-info BUTTON A
+{
+	color: #FFFFFF;
+}
+#site-info BUTTON:hover
+{
+	background-color: #A5A5A5;
+	color: #111111;
+}
+#site-info .theme-preview
+{
+	background-color: #A5A5A5;
+	margin-bottom: 20px;
+	height: 320px;
+	width: 98%;
+}
+#site-info H3.recently-crafted
+{
+	background-image: url(images/label_new_blue.png);
+	background-repeat: no-repeat;
+	padding-left: 48px;
+}
+#images-cp LI
+{
+	background-color: #C3C3C3;
+	height: 180px;
+}
+#images-cp H3
+{
+	margin-bottom: 0;
+}
+/*ARTICLES*************************************/
+#articles
+{
+}
+#articles ARTICLE
+{
+	margin-bottom: 20px;
+}
+#articles H1
+{
+	font-size: 2.4em;
+	color: #A5A5A5;
+}
+#articles NAV
+{
+	margin-bottom: 20px;
+}
+#articles .nav-next
+{
+	text-align: right;
+}
+#articles H2
+{
+	font-size: 1.8em;
+}
+#articles #post-content P
+{
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+#articles #author-info
+{
+	margin-bottom: 20px;
+	padding: 10px;
+	border-bottom: 1px dotted #C3C3C3;
+	border-top: 1px dotted #C3C3C3;
+}
+#articles .entry-meta
+{
+	margin-bottom: 20px;
+	padding: 5px;
+}
+#articles H1
+{
+	font-size: 3.6em;
+	font-weight: bold;
+	border-bottom: 1px dotted #C3C3C3;
+}
+#articles H1.page-title
+{
+	font-size: 1.2em;
+	font-family: "Myriad Web Pro", Arial;
+	text-align: right;
+	font-style: italic;
+	font-weight: normal;
+	border: none;
+}
+#articles H1.entry-title A:hover
+{
+	color: #3D3D3D;
+}
+/*THEMES*/
+.type-cwp_theme .theme-thumbnail
+{
+	background-color: #2F2F2F;
+	height: 295px;
+	margin-bottom: 20px;
+}
+.type-cwp_theme H1
+{
+	margin-bottom: 20px;
+	border-top: 1px solid #000000;
+	padding-top: 5px;
+}
+/*TWEET***********************************/
+#tweets .tweet
+{
+	margin-bottom: 0;
+	background-image: url(images/tweet-bubble.png);
+	text-align: center;
+	background-position: center left;
+	background-repeat: no-repeat;
+	border: none;
+	height: 100px;
+	line-height: 100px;
+}
+/*COMMENTS***********************************/
+#comments
+{
+	padding: 10px;
+}
+#comments .commentlist LI
+{
+	list-style: none;
+}
+#comments .comment-author
+{
+	clear: both;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	border-top: 1px dotted #C3C3C3;
+	border-bottom: 1px dotted #C3C3C3;
+	height: 40px;
+	margin-bottom: 20px;
+}
+#comments IMG.avatar
+{
+	float: left;
+	margin-right: 10px;
+}
+#comments .bypostauthor .comment
+{
+	background-color: #EDEDED;
+	padding: 20px 10px;
+}
+#comments .bypostauthor .comment-author
+{
+	border: none;
+}
+#comments .comment
+{
+}
+#comments INPUT[type="text"], TEXTAREA
+{
+	padding: 5px;
+	margin-left: 10px;
+	border: 1px solid #C3C3C3;
+	display: block;
+	width: 400px;
+}
+#comments TEXTAREA
+{
+	margin-top: 10px;
+}
+/*LOGIN****************************************/
+#login
+{
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 32px;
+}
+#login .login
+{
+	text-align: center;
+}
+#login .row
+{
+	border-top: 1px dotted #C3C3C3;
+	/*[disabled]border-bottom:1px dotted #C3C3C3;*/
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#login BUTTON
+{
+	background-color: #999999;
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+}
+#login BUTTON:hover
+{
+	background-color: #2F2F2F;
+}
+/*SIDEBAR***************************************/
+#sidebar H3
+{
+	font-size: 1.9em;
+	color: #C3C3C3;
+	border-bottom: 1px dotted #C3C3C3;
+}
+#sidebar H3 A:hover
+{
+	color: #3D3D3D;
+}
+#sidebar .widget
+{
+	margin-bottom: 20px;
+}
+/*pagination*/
+.pagination
+{
+	margin: 5px;
+	padding: 5px;
+}
+.pagination .current
+{
+	color: #DDDDDD;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.pagination A
+{
+	background-color: #DDDDDD;
+	width: 0;
+	height: 20px;
+	margin: 0 10px 0 0;
+	padding: 5px;
+	border: 1px solid #A5A5A5;
+}
+.pagination LI
+{
+	padding: 5px;
+	background-color: #F9F9F9;
+}
+/*FOOTER***************************************/
+#footer
+{
+	padding-bottom: 20px;
+	padding-top: 40px;
+	background-image: url(images/crafted-pressed-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+#footer H3
+{
+	font-size: 1.8em;
+	color: #3D3D3D;
+}
+#footer UL
+{
+	margin-left: 0;
+}
+#footer #copright-info
+{
+	padding-top: 20px;
+	text-align: center;
+}
+#footer A:link, #footer A:visited
+{
+	color: #3D3D3D;
+}
+#footer A:hover
+{
+	color: #E3E2E2;
+}
+/*FONTS*****************************************/
+.bebas
+{
+	font-family: BebasRegular, Arial, "Myriad Web Pro", sans-serif;
+}

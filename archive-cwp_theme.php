@@ -18,7 +18,7 @@
         <div class="nav-next"><?php previous_posts_link(__('Newer posts <span class="meta-nav">&rarr;</span>', 'toolbox')); ?></div>
     </nav><!-- #nav-above -->
 <?php endif; ?>
-<ul class="block-grid mobile two-up">
+<ul class="block-grid mobile three-up">
 <?php /* Start the Loop */ ?>
 <?php while (have_posts()) : the_post(); ?>
 
@@ -27,10 +27,7 @@
 
         <li>
         <?php
-
         cwp_layout::tpl_part('base', 'themes');
-
-
         ?>
         </li>
 

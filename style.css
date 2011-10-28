@@ -297,8 +297,11 @@ NAV#top A:hover
 .type-cwp_theme H1
 {
 	margin-bottom: 20px;
-	border-top: 1px solid #000000;
 	padding-top: 5px;
+}
+#cwp-themes LI
+{
+	padding: 0;
 }
 /*TWEET***********************************/
 #tweets .tweet

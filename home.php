@@ -17,24 +17,25 @@
 
             <?php endwhile; ?>
         <?php else : ?>
+        <h3 class="recently-crafted"><a href="">Recently Crafted</a></h3>
             <div class="theme-preview">
                 <!-- class content -->
                 theme preview
 
             </div>
-             <h3 class="recently-crafted"><a href="">Recently Crafted</a></h3>
+
 
             <p>
                 Quickly extend functional ROI for e-business testing procedures. Competently benchmark compelling experiences without interactive ROI. Phosfluorescently e-enable high-quality partnerships via vertical e-tailers. Holisticly procrastinate extensive.
             </p>
 
         <?php endif; ?>
-            <a href="<?php bloginfo('url') ?>/theme"><button class="nice button radius white large">Browse Our Themes</button></a>
+            <a href="<?php bloginfo('wpurl') ?>/theme"><button class="nice button radius white large">Browse Our Themes</button></a>
 
         <!-- ###end-row### -->
     </div>
     <div class="four columns">
-        <h3><a href="<?php bloginfo('url') ?>/about">Our Craft</a></h3>
+        <h3><a href="<?php bloginfo('siteurl') ?>/about">Our Craft</a></h3>
         <div class="about-us">
             <!-- class content -->
             <p>We create, craft, sell and customize, stunning, one-of-a-kind WordPress applications and themes. That are feature rich, functional and easy to use. We can even add the unique style, feel and finish to really set it a part!</p>
@@ -45,7 +46,7 @@
             </p>
 
         </div>
-        <h3><a href="<?php bloginfo('url') ?>/features">Pressed In</a></h3>
+        <h3><a href="<?php bloginfo('siteurl') ?>/features">Pressed In</a></h3>
         <p><strong>Key Features</strong></p>
         <ul>
             <li>WordPress 3.2 Support</li>

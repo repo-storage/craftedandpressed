@@ -13,35 +13,29 @@
         $theme_query = new WP_Query('post_type=cwp_theme&showposts=1');
         if ($theme_query->have_posts()):
             while ($theme_query->have_posts()):
+                $theme_query->the_post();
                 ?>
-                <h3 class="recently-crafted"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-                <?php if (has_post_thumbnail()) : the_post_thumbnail();
+                <h3 class="recently-crafted"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                <div class="theme-preview">
+                    <?php the_post_thumbnail('theme-preview'); ?>
+                </div>
+                <?php the_excerpt(); ?>
 
-
-                else: ?>
-                    <div class="theme-preview">
-                        <!-- class content -->
-                        theme preview
-
-                    </div>
-                <?php endif; ?>
-                    <?php the_excerpt(); ?>
             <?php endwhile; ?>
         <?php else : ?>
-            <h3 class="recently-crafted"><a href="">Recently Crafted</a></h3>
             <div class="theme-preview">
                 <!-- class content -->
                 theme preview
 
             </div>
-
+            <h3 class="recently-crafted"><a href="">Recently Crafted</a></h3>
 
             <p>
                 Quickly extend functional ROI for e-business testing procedures. Competently benchmark compelling experiences without interactive ROI. Phosfluorescently e-enable high-quality partnerships via vertical e-tailers. Holisticly procrastinate extensive.
             </p>
 
         <?php endif; ?>
-        <a href="<?php bloginfo('wpurl') ?>/theme"><button class="nice button radius white large">Browse Our Themes</button></a>
+        <a href="<?php bloginfo('wpurl') ?>/theme" class="nice button radius white large">Browse Our Themes</a>
 
         <!-- ###end-row### -->
     </div>

@@ -10,14 +10,25 @@
     <div class="eight columns">
 
         <?php
-        $theme_query = new WP_Query('post_type=cwp_themes&showposts=1');
+        $theme_query = new WP_Query('post_type=cwp_theme&showposts=1');
         if ($theme_query->have_posts()):
             while ($theme_query->have_posts()):
                 ?>
+                <h3 class="recently-crafted"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+                <?php if (has_post_thumbnail()) : the_post_thumbnail();
 
+
+                else: ?>
+                    <div class="theme-preview">
+                        <!-- class content -->
+                        theme preview
+
+                    </div>
+                <?php endif; ?>
+                    <?php the_excerpt(); ?>
             <?php endwhile; ?>
         <?php else : ?>
-        <h3 class="recently-crafted"><a href="">Recently Crafted</a></h3>
+            <h3 class="recently-crafted"><a href="">Recently Crafted</a></h3>
             <div class="theme-preview">
                 <!-- class content -->
                 theme preview
@@ -30,7 +41,7 @@
             </p>
 
         <?php endif; ?>
-            <a href="<?php bloginfo('wpurl') ?>/theme"><button class="nice button radius white large">Browse Our Themes</button></a>
+        <a href="<?php bloginfo('wpurl') ?>/theme"><button class="nice button radius white large">Browse Our Themes</button></a>
 
         <!-- ###end-row### -->
     </div>

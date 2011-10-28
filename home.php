@@ -34,7 +34,7 @@
                 Quickly extend functional ROI for e-business testing procedures. Competently benchmark compelling experiences without interactive ROI. Phosfluorescently e-enable high-quality partnerships via vertical e-tailers. Holisticly procrastinate extensive.
             </p>
 
-        <?php endif; ?>
+        <?php endif; wp_reset_postdata() ?>
         <a href="<?php bloginfo('wpurl') ?>/theme" class="nice button radius white large">Browse Our Themes</a>
 
         <!-- ###end-row### -->

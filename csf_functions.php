@@ -101,10 +101,9 @@ add_theme_support('automatic-feed-links');
 //add_editor_style();
 //cwp::theme_images(); //adds  image sizes slideshow-[720,960,1200,1560], icon-[40,60,100]
 add_image_size('slideshow-980', 980, 420, true);
-add_image_size('slideshow-1200', 1180, 550, true);
-add_image_size('slideshow-1560', 1540, 550, true);
 add_image_size('slideshow-720', 600, 550, true);
-add_image_size('grid-thumbnail', 370, 270, true);
+add_image_size('grid-thumbnail', 370, 320, true);
+add_image_size('theme-preview', 620, 270, true);
 add_image_size('icon-60', 60, 60, true);
 add_image_size('icon-100', 100, 100, true);
 add_image_size('icon-40', 40, 40, true);
